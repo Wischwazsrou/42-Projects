@@ -6,7 +6,7 @@
 /*   By: ffrimpon <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/19 16:33:13 by ffrimpon          #+#    #+#             */
-/*   Updated: 2016/08/22 21:48:31 by ffrimpon         ###   ########.fr       */
+/*   Updated: 2016/12/19 18:36:45 by ffrimpon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,6 +97,7 @@ static char		**read_file(char **tab_rooms, int i)
 	i = 0;
 	while ((ret = get_next_line(0, &line) == 1))
 	{
+		ft_printf("%s\n", line);
 		if (ft_strcmp(line, "\0") == 0)
 			break ;
 		tab_rooms[i++] = ft_strdup(line);
